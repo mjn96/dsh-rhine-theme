@@ -1,0 +1,10 @@
+# dsh-rhine-theme — bundle patch layer.
+#
+# Installing this package into a profile (`dsh plugin --profile <name> add dsh-rhine-theme`)
+# appends it to `dsh.profile.bundles`; this patch is then applied as that
+# bundle's layer. The row below loads the package's main entry as the host
+# half (an empty Cordis plugin) and, because the package declares `dsh.client`,
+# the web app also loads its `./client` bundle as the browser half.
+- insert:
+    - id: dsh-rhine-theme
+      name: dsh-rhine-theme
