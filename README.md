@@ -6,16 +6,16 @@ RHINE LAB（莱茵生命）分析工作台主题，面向 DeepSeek Harness Web �
 
 ## 安装
 
-### 从 GitHub 安装（推荐）
-
-```bash
-dsh plugin --profile web add github:mjn96/dsh-rhine-theme
-```
-
-### 从 npm 安装（发布后）
+### 从 npm 安装（推荐）
 
 ```bash
 dsh plugin --profile web add dsh-rhine-theme
+```
+
+### 从 GitHub 安装
+
+```bash
+dsh plugin --profile web add github:mjn96/dsh-rhine-theme
 ```
 
 ### 从本地路径安装
@@ -38,12 +38,6 @@ dsh plugin --profile web add file:/绝对路径/dsh-rhine-theme
     ]
   }
 }
-```
-
-### 从 git 仓库安装
-
-```bash
-dsh plugin --profile web add github:mjn96/dsh-rhine-theme
 ```
 
 安装完成后重启 profile：
