@@ -2,6 +2,16 @@
   "name": "dsh-rhine-theme",
   "version": "1.0.0",
   "description": "RHINE LAB 分析工作台主题：暖冷灰实验室表面、无穷符号品牌、信号橙主操作，为 DeepSeek Harness Web 客户端提供浅色莱茵生命主题。",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "theme",
+    "rhine-lab",
+    "arknights",
+    "client"
+  ],
   "license": "MIT",
   "type": "module",
   "main": "lib/index.js",
@@ -18,8 +28,12 @@
     "lib/index.js",
     "lib/client.js",
     "cordis.patch.yml",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
+  "engines": {
+    "node": ">=18"
+  },
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
@@ -35,12 +49,11 @@
     }
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh-client-runtime": "^0.1.0-rc.8",
-    "@deepseek-ai/dsh-client-ui-conversation": "^0.1.0-rc.8",
-    "@deepseek-ai/dsh-client-ui-sidebar": "^0.1.0-rc.8",
-    "@deepseek-ai/dsh-client-ui-theme": "^0.1.0-rc.8",
-    "@deepseek-ai/cordis": "^4.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    }
   }
 }
